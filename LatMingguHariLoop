@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LatMingguHariLoop {
+    public static void main(String[]args){
+        Scanner inputnya = new Scanner(System.in);
+        int angka;
+
+        System.out.print("Masukan Minggu = ");
+        angka = inputnya.nextInt();
+
+        for (int i = 1; i <= angka; i++) {
+            System.out.println("Minggu " + i);
+            for (int j = 1; j <= 7; j++) {
+                System.out.println("Hari Ke " + j);
+            }
+        }
+        System.out.println("done");
+    }
+}
+
+// i di sout -> karena yang dinamis i nya bukan angka
