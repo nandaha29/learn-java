@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LatCountdownJava {
+    public static void main(String[] args){
+        Scanner inputnya = new Scanner(System.in);
+        int angka;
+
+        System.out.print("Masukan Bilangan = ");
+        angka = inputnya.nextInt();
+
+        System.out.println("Status Rocket : Ready");
+        while(angka > 0){
+            System.out.println( angka);
+            angka--;
+        }
+        System.out.println("tuing");
+
+    }
+}
+
+// angka-- -> biar menghitung mundur
