@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class TryDataMahasiswa {
+    public static void main(String[] args) {
+//        String nama, alamat;
+//        long nim;
+//        int angka, ipk, notelp;
+        int angka;
+
+        Scanner inputnya = new Scanner(System.in);
+        System.out.print("Jumlah data yg mau dimasukkan = ");
+        angka = inputnya.nextInt();
+
+        for (int i = 1; i <= angka; i++) {
+        String nama, alamat;
+        long nim;
+        int ipk, notelp;
+
+            System.out.println("Halo, dengan siapa disana? ");
+            inputnya.nextLine();
+             nama = inputnya.nextLine();
+            System.out.print("Alamat mana nih? ");
+             alamat = inputnya.nextLine();
+            System.out.print("NIM nya berapa? ");
+             nim = inputnya.nextLong();
+            System.out.print("Notelp mana nih? ");
+             notelp = inputnya.nextInt();
+            System.out.print("IPK mana nih? ");
+             ipk = inputnya.nextInt();
+
+
+        System.out.println("datamu masuk yey!");
+        System.out.println("...");
+
+        System.out.println("==========================================================================");
+        System.out.printf("||%-15s|%-15S|%-12S|%-12S|%-12S||\n", "NIM", "NAMA LENGKAP","ALAMAT", "NO TELP", "IPK");
+        System.out.println("==========================================================================");
+        System.out.printf("||%-15d|%-15S|%-12S|%-12S|%-12S||\n", nim, nama, alamat, notelp, ipk);
+        System.out.println("==========================================================================");
+
+    }
+
+} }
