@@ -1,0 +1,84 @@
+import java.util.*;
+public class TryDataMahasiswaKedua {
+    public static void main(String[] args) {
+        Scanner inputnya = new Scanner(System.in);
+        String[] nama = new String[5];
+        Integer[] nim = new Integer[5];
+        String[] alamat = new String[5];
+        Integer[] notelp = new Integer[5];
+        Integer[] ipk = new Integer[5];
+
+        for(int counter =0; counter < 5; counter++){
+            System.out.println("Masukkan nama: " +  (counter +1));
+            nama [counter] = inputnya.next();
+            System.out.println("NIM: ");
+            nim [counter] = inputnya.nextInt();
+            System.out.println("Alamat: ");
+            alamat [counter] = inputnya.next();
+            System.out.println("No telp: ");
+            notelp [counter] = inputnya.nextInt();
+            System.out.println("IPK: ");
+            ipk [counter] = inputnya.nextInt();
+        }
+        System.out.println("datamu masuk yey!");
+        System.out.println("...");
+
+        for(int counter =0; counter < 5; counter++){
+//            System.out.println("Name: " + nama[counter]);
+//            System.out.println("Grade: " + nim[counter]);
+//            NANDA HAFIZA YUSRON 225150207111118
+
+            System.out.println("==========================================================================");
+            System.out.printf("||%-15s|%-15S|%-12S|%-12S|%-12S||\n", "NIM", "NAMA LENGKAP","ALAMAT", "NO TELP", "IPK");
+            System.out.println("==========================================================================");
+            System.out.printf("||%-15d|%-15S|%-12S|%-12S|%-12S||\n", nim[counter], nama[counter], alamat[counter], notelp[counter], ipk[counter]);
+            System.out.println("==========================================================================");
+
+        }
+    }
+}
+
+import java.util.*;
+
+public class PEriqArr {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Declare Arraynya dulu ya ga ya?
+        Long[] nim = new Long[5];
+        Long[] not = new Long[5];
+        String[] nam = new String[5];
+        String[] cit = new String[5];
+        String[] gra = new String[5];
+        // Buat input Arraynya ya ga ya?
+        for (int Hitunglah = 0; Hitunglah < 5; Hitunglah++) {
+            System.out.print("Enter the NIM of student " + (Hitunglah + 1) + ": ");
+            nim[Hitunglah] = input.nextLong();
+            System.out.print("Enter the name of student " + (Hitunglah + 1) + ": ");
+            input.nextLine();
+            nam[Hitunglah] = input.nextLine();
+            System.out.print("Enter the address of student " + (Hitunglah + 1) + ": ");
+            cit[Hitunglah] = input.nextLine();
+            System.out.print("Enter the Phonenumber of student " + (Hitunglah + 1) + ": ");
+            not[Hitunglah] = input.nextLong();
+            System.out.print("Enter the IPK of student " + (Hitunglah + 1) + ": ");
+            gra[Hitunglah] = input.next();
+        }
+        input.close();
+        // Buat Format Kop Tabel
+        System.out.println(
+                "=======================================================================================================");
+        System.out.printf("||%-15s|%-30S|%-15S|%-30S|%-5S||\n", "NIM", "NAMA LENGKAP", "NOMOR TELEPON", "ALAMAT",
+                "IPK");
+        System.out.println(
+                "=======================================================================================================");
+        // Output Arraynya KK:D
+        for (int Hitunglah = 0; Hitunglah < 5; Hitunglah++) {
+            System.out.printf("||%-15d|%-30S|%-15d|%-30S|%-5S||\n", nim[Hitunglah], nam[Hitunglah], not[Hitunglah],
+                    cit[Hitunglah], gra[Hitunglah]);
+        }
+        // Bawahan doang
+        System.out.println(
+                "=======================================================================================================");
+    }
+
+}
