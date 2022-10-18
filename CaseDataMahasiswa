@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class CaseDataMahasiswa {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String NIM = input.nextLine();
+        String NAME = input.nextLine();
+        if (NIM.length() != 15) {
+            System.out.println("Bukan sebuah NIM");
+        } else {
+            System.out.println("NIM: " + NIM);
+            System.out.println("Nama: " + NAME);
+            System.out.println("\nAngkatan: 20" + NIM.substring(0, 2));
+            System.out.println("\nFakultas: Ilmu Komputer");
+            switch (NIM.substring(5, 7)) {
+                case "02":
+                    System.out.println("Program Studi: TIF");
+                    break;
+                case "03":
+                    System.out.println("Program Studi: TEKKOM");
+                    break;
+                case "04":
+                    System.out.println("Program Studi: SI");
+                    break;
+                case "06":
+                    System.out.println("Program Studi: PTI");
+                    break;
+                case "07":
+                    System.out.println("Program Studi: TI");
+                    break;
+            }
+            switch (NIM.substring(7, 12)) {
+                case "00111":
+                    System.out.println("Seleksi Masuk: SBMPTN");
+                    break;
+                case "01111":
+                    System.out.println("Seleksi Masuk: SNMPTN");
+                    break;
+                case "07111":
+                    System.out.println("Seleksi Masuk: Mandiri");
+                    break;
+            }
+            System.out.println("Kode Unik: " + NIM.substring(12));
+        }
+    }
+}
