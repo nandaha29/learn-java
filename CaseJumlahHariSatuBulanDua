@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class CaseJumlahHariSatuBulanDua {
+    public static void main(String[] args){
+        Scanner inputnya = new Scanner(System.in);
+
+        System.out.println("Masukkan Bulan Kapital ");
+        String month;
+        month = inputnya.nextLine();
+//        String month = "APRIL";
+        int day = 0;
+
+        switch (month) {
+            case "JANUARI": day=30;
+                break;
+            case "FEBRUARI":day=28;
+                break;
+            case "MARET":day=31;
+                break;
+            case "APRIL":day=30;
+                break;
+            case "MEI":day=31;
+                break;
+            case "JUNI":day=30;
+                break;
+            case "JULI":day=31;
+                break;
+            case "AGUSTUS":day=31;
+                break;
+            case "SEPTEMBER":day=30;
+                break;
+            case "OKTOBER":day=31;
+                break;
+            case "NOVEMBER":day=30;
+                break;
+            case "DESEMBER":day=31;
+                break;
+            default:
+                System.out.println("Bulan tidak valid");
+                break;
+        }
+
+
+        System.out.println("Bulan " + month + " jumlah harinya " + day + " hari");
+//   biar defaultnya keloncat gimana yak? beum nemu
+    }
+}
