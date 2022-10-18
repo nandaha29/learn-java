@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class CaseUbLaundry {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner inputnya = new Scanner(System.in);
+
+        float harga = inputnya.nextFloat();
+        String pilihan = inputnya.next();
+        float TotalKirim;
+        // String pilihan = "Ambil";
+        // double harga = 35000f, TotalKirim;
+
+        switch (pilihan){
+            case "Kirim" :
+                TotalKirim = harga + (harga / 10);
+                System.out.printf("Total harga belanja : Rp %,.2f\n" , harga);
+                System.out.println("Status delivery : Diantarkan");
+                System.out.printf("Total harga yang perlu dibayar : Rp %,.2f\n" , TotalKirim);
+                break;
+            case "Ambil" :
+                System.out.printf("Total harga belanja : Rp %,.2f\n" , harga);
+                System.out.println("Status delivery : Diambil");
+                break;
+        }
+    }
+}
